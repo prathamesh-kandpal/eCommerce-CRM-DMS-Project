@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ table_name }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>{{ table_name|capfirst }} Table</h2>
+        <div class="table-responsive">
+            {{ table_data|safe }}
+        </div>
+        <a href="/dashboard/" class="btn btn-primary mt-3">Back to Dashboard</a>
+    </div>
+</body>
+</html>

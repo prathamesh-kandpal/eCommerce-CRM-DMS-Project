@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div style="display: flex;">
+        <!-- Sidebar -->
+        <div style="width: 20%; background-color: #f4f4f4; padding: 20px;">
+            <h3>Modules</h3>
+            <ul>
+                <li><a href="/view_table/customers">Customers</a></li>
+                <li><a href="/view_table/orders">Orders</a></li>
+                <li><a href="/view_table/products">Products</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Dashboard -->
+        <div style="width: 80%; padding: 20px;">
+            <h2>Dashboard</h2>
+
+            <!-- Churn Rate Chart -->
+            <div>
+                <h3>Churn Rate by Location</h3>
+                <img src="{% static 'images/churn_location.png' %}" alt="Churn Rate Chart" style="width: 60%; height: auto;">
+            </div>
+
+            <!-- Product Recommendation Distribution Pie Chart -->
+            <div>
+                <h3>Product Recommendation Distribution</h3>
+                <img src="{% static 'images/product_recommendation_pie.png' %}" alt="Product Recommendation Distribution" style="width: 60%; height: auto;">
+            </div>
+
+            <!-- Monthly Sales Chart -->
+            <div>
+                <h3>Monthly Sales</h3>
+                <img src="{% static 'images/monthly_sales.png' %}" alt="Monthly Sales Chart" style="width: 60%; height: auto;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
