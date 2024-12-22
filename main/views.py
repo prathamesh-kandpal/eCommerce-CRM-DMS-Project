@@ -18,36 +18,12 @@ def dashboard(request):
     
     # Render and return the dashboard template with the context
     return render(request, 'dashboard.html', context)
-'''
-@login_required
-def view_table(request, table_name):
-    try:
-        
-        # Connect to local PostgreSQL
-        conn = psycopg.connect(
-            host="localhost",                # Localhost for local PostgreSQL
-            database="ecommerce_data_lake",  # Name of your local database
-            user="postgres",          # Your local PostgreSQL username
-            password="********"   # Your local PostgreSQL password
-        )
-    
-        # Query the selected table
-        query = f"SELECT * FROM {table_name} LIMIT 50;"  # Fetch only 50 rows for performance
-        data = pd.read_sql_query(query, conn)
-        conn.close()
-
-        # Convert data to HTML
-        table_html = data.to_html(classes='table table-striped', index=False)
-
-    except Exception as e:
-        table_html = f"<p>Error loading table: {str(e)}</p>"
-'''
 @login_required
 def view_table(request, table_name):
     try:
         # Connect to local PostgreSQL
         conn = psycopg.connect(
-            "host=localhost dbname=ecommerce_data_lake user=postgres password='May@2025!'"
+            "host=localhost dbname=ecommerce_data_lake user=postgres password='*******'"
         )
 
         # Query the selected table
