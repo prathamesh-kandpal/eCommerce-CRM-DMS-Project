@@ -86,18 +86,6 @@ DATABASES = {
         'PORT': '5432',                 # Default PostgreSQL port
     }
 }
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ecommerce_data_lake',  # Azure DB name
-        'USER': 'postgres@your_database_server',  # Azure DB username
-        'PASSWORD': 'May@2025!',  # Azure DB password
-        'HOST': 'ecommerce-crm.postgres.database.azure.com',  # Azure DB host
-        'PORT': '5432',  # Default PostgreSQL port
-    }
-}
-'''
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
