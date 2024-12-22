@@ -36,8 +36,8 @@ pip install -r requirements.txt
 - Update the `DATABASES` configuration in `settings.py` with your database credentials.
 
 5. **Run Migrations**
-python manage.py makemigrations 
-python manage.py migrate
+- python manage.py makemigrations 
+- python manage.py migrate
 
 6. **Start the Development Server**
 python manage.py runserver
