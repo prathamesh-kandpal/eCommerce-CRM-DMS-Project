@@ -74,7 +74,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 - **Prathamesh Kandpal** - [plk7197@nyu.edu](mailto:plk7197@nyu.edu)
-- Project Link: [https://github.com/yourusername/project-repository](https://github.com/yourusername/project-repository)
+- Project Link: [https://github.com/prathamesh-kandpal/eCommerce-CRM-DMS-Project](https://github.com/prathamesh-kandpal/eCommerce-CRM-DMS-Project)
 
 ## Acknowledgements
 - [Django Documentation](https://docs.djangoproject.com/en/3.1/)
