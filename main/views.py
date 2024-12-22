@@ -28,7 +28,7 @@ def view_table(request, table_name):
             host="localhost",                # Localhost for local PostgreSQL
             database="ecommerce_data_lake",  # Name of your local database
             user="postgres",          # Your local PostgreSQL username
-            password="May@2025!"   # Your local PostgreSQL password
+            password="********"   # Your local PostgreSQL password
         )
     
         # Query the selected table
