@@ -3,6 +3,33 @@
 ## Project Overview
 This project focuses on developing an Enterprise Customer Relationship Management (CRM) system tailored for e-commerce businesses. The CRM is designed to centralize customer data, manage sales records, track customer interactions, and provide analytics on customer behavior, enhancing customer retention, improving support efficiency, and personalizing marketing efforts.
 
+## ER Diagram
+The project started with the development of a comprehensive Entity-Relationship (ER) diagram that outlines all the primary entities and their relationships within the CRM system. The ER diagram serves as a blueprint for the database design, ensuring that all data interactions are logically structured and efficiently managed.
+
+![ER Diagram](screenshots/er_diagram.png)
+
+## Enterprise Data Architecture (EDA)
+![EDA](screenshots/eda.png)
+The Enterprise Data Architecture for this CRM system is designed to support scalability, reliability, and performance in handling large volumes of data both structured and unstructured. The architecture is layered as follows:
+### Presentation Layer
+Serves as the front end where users interact with the CRM through web and mobile interfaces.
+
+### Business Layer
+Handles business logic and processes data according to the operational requirements of the e-commerce business.
+
+### Application Layer
+Includes all the application logic necessary to perform transaction processing and analytics.
+
+### Data Layer
+Manages the storage and retrieval of data across multiple storage systems, from traditional databases to cloud-based storage solutions.
+
+### Technology Layer
+Provides the necessary technical infrastructure such as servers, network equipment, and software platforms that support the above layers.
+
+## Business Workflow Model
+![Business-workflow](screenshots/business_workflow.png)
+
+
 ## Features
 - **Customer Profile Management:** Organize and manage customer information including contact details, preferences, and transaction history.
 - **Sales and Marketing Analytics:** Tools for segmenting customer data for targeted campaigns and analyzing sales data to tailor offers.
@@ -36,11 +63,11 @@ pip install -r requirements.txt
 - Update the `DATABASES` configuration in `settings.py` with your database credentials.
 
 5. **Run Migrations**
-- python manage.py makemigrations 
-- python manage.py migrate
+python manage.py makemigrations 
+python manage.py migrate
 
 6. **Start the Development Server**
-- python manage.py runserver
+python manage.py runserver
 
 7. **Visit the Application**
 - Open a browser and go to `http://localhost:8000` to start using the application.
@@ -74,7 +101,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 - **Prathamesh Kandpal** - [plk7197@nyu.edu](mailto:plk7197@nyu.edu)
-- Project Link: [https://github.com/prathamesh-kandpal/eCommerce-CRM-DMS-Project](https://github.com/prathamesh-kandpal/eCommerce-CRM-DMS-Project)
+- Project Link: [https://github.com/yourusername/project-repository](https://github.com/yourusername/project-repository)
 
 ## Acknowledgements
 - [Django Documentation](https://docs.djangoproject.com/en/3.1/)
