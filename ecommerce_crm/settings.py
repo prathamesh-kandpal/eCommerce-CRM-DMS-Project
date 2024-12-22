@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'ecommerce_data_lake',  # Local database name
         'USER': 'postgres',      # Local PostgreSQL username
-        'PASSWORD': 'May@2025!',  # Local PostgreSQL password
+        'PASSWORD': '******',  # Local PostgreSQL password
         'HOST': 'localhost',            # Localhost
         'PORT': '5432',                 # Default PostgreSQL port
     }
