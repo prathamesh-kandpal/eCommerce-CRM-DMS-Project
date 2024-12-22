@@ -68,7 +68,7 @@ Building upon the logical schema, the physical database design was implemented t
 To set up the project locally, follow these steps:
 
 1. **Clone the Repository**
-git clone https://github.com/yourusername/project-repository.git 
+git clone https://github.com/prathamesh-kandpal/eCommerce-CRM-DMS-Project.git 
 cd project-repository
 
 2. **Set Up a Virtual Environment** (Optional but recommended)
