@@ -29,6 +29,26 @@ Provides the necessary technical infrastructure such as servers, network equipme
 ## Business Workflow Model
 ![Business-workflow](screenshots/business_workflow.png)
 
+## Data Lake Creation and Physical Database Design
+
+### Data Lake Creation in PostgreSQL
+
+The foundation of our Enterprise CRM system is a robust data lake built within PostgreSQL, designed to consolidate and manage both structured and unstructured data crucial for comprehensive analytics. The logical schema of the data lake was meticulously crafted to support a wide range of data types from various sources, enabling deep insights into e-commerce business operations.
+
+- **Logical Schema Design**: We developed a logical schema that serves as a blueprint for storing structured data such as customer profiles, order histories, and product information, alongside unstructured data like customer reviews and market trends. This schema is specifically optimized for flexibility and scalability to accommodate the evolving needs of data storage and retrieval.
+
+- **Data Integration**: The data lake integrates data from multiple sources, ensuring that all relevant data streams are captured and stored efficiently. This integration facilitates the seamless flow of information across the CRM system, supporting dynamic data analysis and decision-making.
+
+### Physical Database Design
+
+Building upon the logical schema, the physical database design was implemented to enhance performance and ensure data integrity. Key techniques used in this phase include:
+
+- **Indexing**: To improve query performance, especially for frequently accessed data fields, we implemented strategic indexing. For example:
+  ```sql
+  CREATE INDEX idx_customer_id ON orders(customer_id);
+  CREATE INDEX idx_order_date_status ON orders(order_date, status);
+
+
 
 ## Features
 - **Customer Profile Management:** Organize and manage customer information including contact details, preferences, and transaction history.
