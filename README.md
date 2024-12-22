@@ -40,7 +40,7 @@ pip install -r requirements.txt
 - python manage.py migrate
 
 6. **Start the Development Server**
-python manage.py runserver
+- python manage.py runserver
 
 7. **Visit the Application**
 - Open a browser and go to `http://localhost:8000` to start using the application.
